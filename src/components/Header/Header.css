@@ -1,0 +1,12 @@
+.header{
+    width: 100%;
+    font-size: x-large
+}
+
+.title {
+    float: right;
+}
+
+.scores {
+    float: left;
+}
