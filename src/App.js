@@ -13,7 +13,7 @@ class App extends React.Component{
     highScore: 0
   };
 
-  Counter = id => {
+  counter = id => {
     this.state.cards.find((onClick, i) => {
       if (onClick.id === id) {
         if(cards[i].count === 0){
@@ -33,7 +33,7 @@ class App extends React.Component{
   gameOver = () => {
     if (this.state.score > this.state.highScore) {
       this.setState({highScore: this.state.score}, function() {
-        console.log(this.state.highscore);
+        console.log(this.state.highScore);
       });
     }
     this.state.cards.forEach(card => {
@@ -44,7 +44,18 @@ class App extends React.Component{
     return true;
   }
 
-
+render() {
+  return (
+    <Container>
+      <Header score={this.state.score} highScore={this.state.highScore}>Marvel Clicky Game!</Header>
+      {this.state.cards.map(card => (
+        <Card
+        counter={this.counter} id={card.id} key={card.id} image={card.image}
+        />
+      ))}
+    </Container>
+  );
+}
 
 
 
