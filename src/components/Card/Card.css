@@ -1,5 +1,5 @@
 .card {
-    height: 200px;
+    height: 250px;
     border-radius: 2px;
     Width: 200px;
     margin: 1rem;
@@ -9,11 +9,11 @@
 }
 
 .card > .img-container {
-    height: 60%;
+    height: 100%;
     overflow: hidden;
     background: #6CADDC;
 }
 
 .card > .img-container > .card-image {
-    width: 60%
+    width: 100%
 }

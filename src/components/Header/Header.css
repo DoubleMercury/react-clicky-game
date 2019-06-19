@@ -6,7 +6,8 @@
 
 .title {
     float: right;
-    color: white
+    color: rgb(238, 223, 10);
+    font-size: 6rem
 }
 
 .scores {
