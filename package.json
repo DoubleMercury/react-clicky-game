@@ -2,6 +2,7 @@
   "name": "react-clicky-game",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://doublemercury.github.io/react-clicky-game",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
@@ -10,7 +11,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -29,7 +30,6 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ],
-    "homepage": "https://doublemercury.github.io/react-clicky-game/"
+    ]
   }
 }
